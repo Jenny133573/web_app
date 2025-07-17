@@ -148,6 +148,7 @@ with open('xgb_model.pkl', 'wb') as file:
     pickle.dump(xgb,file)
 
 # Load the model
+@st.cache_resource
 def get_model():
   with open('xgb_model.pkl', 'rb') as file:
       loaded_model = pickle.load(file)
