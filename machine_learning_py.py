@@ -1,5 +1,5 @@
 import pandas as pd
-df=pd.read_csv(r"C:\Users\Danny\Downloads\survey_results_public (1).csv")
+df=pd.read_csv(r"survey_results_public.csv")
 
 df.head()
 
