@@ -9,7 +9,7 @@ import numpy as np
 
 @st.cache
 def show_data():
-    df=pd.read_csv(r"C:\Users\Danny\Downloads\survey_results_public (1).csv")
+    df=pd.read_csv(r"survey_results_public.csv")
     df=df[['YearsCodePro', 'Country', 'EdLevel', 'Employment', 'ConvertedCompYearly']]
     df=df.rename({'ConvertedCompyearly': 'Salary'},axis=1)
     features=['Country', 'EdLevel', 'Employment', 'YearsCodePro']
