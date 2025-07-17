@@ -7,7 +7,7 @@ from sklearn.impute import SimpleImputer
 import numpy as np
 
 
-@st.cache
+@st.cache_data
 def show_data():
     df=pd.read_csv(r"survey_results_public.csv")
     df=df[['YearsCodePro', 'Country', 'EdLevel', 'Employment', 'ConvertedCompYearly']]
