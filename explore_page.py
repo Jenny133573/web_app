@@ -54,8 +54,8 @@ def show_explore_page():
     data=df.Country().value_counts()
 
     fig1, ax1=plt.subplots()
-    ax1.pie(data, labels=data.index, autopct='%1.1f%%', starangle=90)
-    ax1.axis=True
+    ax1.pie(data, labels=data.index, autopct='%1.1f%%', startangle=90)
+    ax1.axis=('equal')
 
     st.write('### Number of data from different countries')
     st.pyplot(ax1)
